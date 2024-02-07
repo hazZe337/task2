@@ -1,0 +1,46 @@
+public class Main {
+    public static void main(String[] args) {
+        Proverka(10,20);
+        gh0(0);
+        wood(-53);
+        printString("Hello, world!", 3);
+        yearGit(2020);
+    }
+    public static boolean Proverka (int a, int b) {
+        a = 10;
+        b = 20;
+        if (a + b >= 10 && a + b <= 20) {
+            return true;
+        }
+        return false;
+    }
+    public static void gh0 (int x) {
+        if (x >= 0) {
+            System.out.println("Положительное");
+        } else System.out.println("Отрицательное");
+    }
+    public static boolean wood (int x) {
+        if (x < 0) {
+            return false;
+        }
+        return true;
+    }
+    public static void printString (String word, int times){
+        for (int i = 0; i < times; i++ ){
+            System.out.println(word);
+        }
+    }
+    public static boolean yearGit (int year) {
+        if (year % 4 != 0) {
+            return false;
+
+        } else if (year % 100 != 0){
+            return true;
+        } else if (year % 400 != 0){
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+}
